@@ -39,3 +39,8 @@
     background-color: #888;
     cursor: pointer;
 }
+
+.todoList {
+    margin: 0;
+    padding: 0;
+}

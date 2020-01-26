@@ -1,5 +1,10 @@
 .TodoListItem {
-
+    font-family: Roboto, sans-serif;
     list-style-type: none;
     font-size: 20px;
+    padding: 6px 20px;
+    border-bottom: 3px solid #888;
+}
+.TodoListItem:last-of-type {
+    border-bottom: none;
 }
