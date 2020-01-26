@@ -1,12 +1,10 @@
 import React from "react";
+import './TodoListItem.css';
 
-
-const TodoListItem = (props) => {
-    return (
+const TodoListItem = (props) => (
         <li className="TodoListItem">
-            {props.val.text}
+            {props.item.text}
         </li>
     );
-};
 
 export default TodoListItem;

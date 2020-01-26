@@ -37,7 +37,7 @@ class App extends Component {
             return (
                 <TodoListItem
                     key={id}
-                    val={item} />
+                    item={item} />
             );
         });
 
@@ -49,7 +49,9 @@ class App extends Component {
                       type='text'
                       value={inputValue}
                       onChange={this.onChangeInput} />
-                  <button className='btnValue' onClick={this.onClickAddItem}>add</button>
+                  <button
+                      className='btnValue'
+                      onClick={this.onClickAddItem}>add</button>
               </div>
 
               <ul className="todoList">
