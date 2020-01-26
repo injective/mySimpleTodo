@@ -13,7 +13,7 @@ class App extends Component {
     }
 
     onClickAddItem = () => {
-        if(this.state.inputValue.length > 0) {
+        if(this.state.inputValue.length) {
             const todoItem = {
                 text: this.state.inputValue
             };
@@ -33,7 +33,7 @@ class App extends Component {
 
     render() {
         const { list, inputValue } = this.state;
-        const todoListItem = list.map((item, id) => {
+        const todoItems = list.map((item, id) => {
             return (
                 <TodoListItem
                     key={id}
@@ -53,7 +53,7 @@ class App extends Component {
               </div>
 
               <ul className="todoList">
-                  {todoListItem}
+                  {todoItems}
               </ul>
           </div>
         );
